@@ -525,6 +525,10 @@ template {
   color: #333333;
 }
 
+.hotel {
+  padding-top: 23px;
+}
+
 .hotel-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -724,6 +728,9 @@ template {
 }
 
 @media (max-width: 355px) {
+  .hotel {
+    padding-top: 0;
+  }
   .hotel-description {
     width: 280px;
   }
