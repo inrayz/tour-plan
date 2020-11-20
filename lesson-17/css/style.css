@@ -443,6 +443,22 @@ template {
   border: none;
   font-size: 12px;
   line-height: 15px;
+  color: #333333;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input::placeholder {
   color: #BDBDBD;
 }
 
@@ -507,11 +523,6 @@ template {
 .breadcrumb-list__link {
   text-decoration: none;
   color: #333333;
-}
-
-.hotel {
-  padding-top: 23px;
-  padding-bottom: 70px;
 }
 
 .hotel-info {
@@ -602,6 +613,10 @@ template {
   line-height: 18px;
 }
 
+.rating__counter__max {
+  font-size: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -673,6 +688,7 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
     margin-bottom: 16px;
+    margin-right: 30px;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
