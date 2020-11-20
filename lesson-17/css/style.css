@@ -662,6 +662,9 @@ template {
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
+  .hotel {
+    padding-top: 0;
+  }
   .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -728,9 +731,6 @@ template {
 }
 
 @media (max-width: 355px) {
-  .hotel {
-    padding-top: 0;
-  }
   .hotel-description {
     width: 280px;
   }
