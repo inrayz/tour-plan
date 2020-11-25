@@ -914,6 +914,9 @@ template {
   color: #ffffff;
   background-color: #EC1F46;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -932,7 +935,7 @@ template {
 }
 
 @media (max-width: 992px) {
-  .container {
+  .container, .newsletter-wrapper {
     max-width: 700px;
   }
   .logo {
@@ -1060,6 +1063,40 @@ template {
   }
   .map {
     width: 100%;
+  }
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
+  .newsletter-wrapper {
+    max-width: 576px;
+    width: 92%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .newsletter-title {
+    padding-bottom: 37px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .subscribe {
+    width: 100%;
+  }
+  .subscribe__input {
+    padding-left: 20px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
