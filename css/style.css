@@ -869,6 +869,7 @@ template {
 }
 
 .newsletter-title {
+  margin: 0;
   color: #ffffff;
   font-weight: 300;
   font-size: 24px;
@@ -929,6 +930,7 @@ template {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+  margin-top: 0;
 }
 
 .reviews-slider__item {
@@ -1028,6 +1030,7 @@ template {
   line-height: 15px;
   color: #EC1F46;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .reviews-slider__date {
@@ -1237,6 +1240,12 @@ template {
     font-size: 14px;
     line-height: 18px;
   }
+  .reviews__title {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+  }
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
@@ -1267,6 +1276,12 @@ template {
   .hotel-slider {
     height: 250px;
     margin-bottom: 20px;
+  }
+  .reviews__title {
+    max-width: 245px;
+    margin: auto;
+    margin-bottom: 42px;
+    margin-top: 0;
   }
 }
 
