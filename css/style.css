@@ -909,6 +909,23 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  color: #333333;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.subscribe__input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.subscribe__input::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.subscribe__input::placeholder {
+  color: #BDBDBD;
 }
 
 .subscribe__button {
