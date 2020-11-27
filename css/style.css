@@ -1426,6 +1426,12 @@ template {
   .reviews {
     padding-bottom: 60px;
   }
+  .reviews__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
   .reviews-slider__item {
     max-width: 580px;
   }
