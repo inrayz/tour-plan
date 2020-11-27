@@ -1,0 +1,115 @@
+.packages
+  padding: 40px 0 70px 0
+  &-wrapper
+    display: grid
+    grid-template-columns: 350px 350px 350px
+    row-gap: 30px
+    grid-template-rows: 500px 500px
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+  &__images
+    width: 8px
+    height: 8px
+    padding-right: 2px
+  &__rating
+    margin-bottom: 5px
+  &__title
+    margin: 0
+    margin-bottom: 65px
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &__subtitle
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160.6%
+    margin-bottom: 34px
+    width: 299px
+  &__card
+    height: 500px
+    background: $dark
+    border-radius: 8px
+    color: $light
+    overflow: hidden
+    &_item
+      grid-column: 1/3
+  &__image
+    width: 350px
+    height: 250px
+    object-fit: cover
+    &_one
+      width: 50%
+      object-fit: cover
+  &__info
+    padding-top: 20px
+    padding-left: 32px
+    padding-bottom: 25px
+    &_all
+      padding-top: 46px
+      padding-left: 43px
+    &_one
+      display: flex
+      height: 500px
+      width: 100%
+    &_title
+      margin: 0
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 23px
+  &__hotelname
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin-bottom: 27px
+  &__text
+    display: flex
+    align-items: center
+    width: 203px
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    padding-bottom: 11px
+    &:last-child
+      padding-bottom: 24px
+    &--one
+      &:last-child
+        padding-bottom: 0
+  &__room
+    &--one
+      margin-bottom: 37px
+  &__icon
+    padding-right: 14px
+  &__price
+    display: flex
+    flex-wrap: wrap
+  &__oldprice
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    text-decoration-line: line-through
+    margin-bottom: 5px
+  &__newprice
+    display: flex
+    align-items: center
+  &__num
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+    margin-right: 92px
+  &__button
+    font-family: Nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: $light
+    padding: 11px 26px
+    border: none
+    background-color: $primary
+    border-radius: 4px
+    cursor: pointer
