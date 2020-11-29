@@ -1684,6 +1684,9 @@ template {
   .hotel-info__description {
     margin-bottom: 38px;
   }
+  .hotel-right {
+    min-height: 402px;
+  }
   .map {
     height: 172px;
   }
