@@ -526,7 +526,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 10px;
   padding-bottom: 70px;
 }
 
@@ -659,6 +659,10 @@ template {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 4px;
+}
+
+.stars__image {
+  margin-right: -2px;
 }
 
 .offer {
@@ -1555,7 +1559,7 @@ template {
   line-height: 15px;
 }
 
-.footer__button--fields {
+.footer__button_fields {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1589,7 +1593,7 @@ template {
   margin-left: auto;
 }
 
-.footer__payment--link {
+.footer__payment_link {
   margin-right: 10px;
   font-weight: normal;
   font-size: 12px;
@@ -1598,7 +1602,7 @@ template {
   color: #ffffff;
 }
 
-.footer__payment--link:last-child {
+.footer__payment_link:last-child {
   margin-right: 0;
 }
 
@@ -2260,7 +2264,7 @@ template {
   .footer__payment_links {
     margin-bottom: 10px;
   }
-  .footer__button--fields {
+  .footer__button_fields {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
