@@ -90,6 +90,9 @@
     &-wrapper
       grid-template-columns: 210px 210px 210px
       grid-template-rows: 350px 350px
+    &__title
+      font-size: 30px
+      line-height: 38px
     &__card
       height: 350px
     &__image
@@ -122,7 +125,7 @@
         padding-bottom: 18px
     &__room
       margin-bottom: 9px
-      &--one
+      &_one
         margin-bottom: -5px
     &__button
       padding: 8px 11px
@@ -233,6 +236,50 @@
   .card
     width: 48%
     height: 250px
+  .packages
+    &-wrapper
+      grid-template-columns: 275px 275px
+    &__oldprice
+      width: 100px
+      margin: 0
+    &__num
+      margin-right: 90px
+    &__subtitle
+      width: 86%
+@media (max-width: 640px)
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr
+    &__card
+      display: flex
+      &_item
+        grid-column: 1
+    &__image
+      width: 50%
+      height: 100%
+    &__info
+      padding-top: 35px
+      &_title
+        margin-bottom: 89px
+    &__text
+      width: 100%
+      font-size: 14px
+      &_one
+        font-size: 12px
+    &__room
+      margin-bottom: 65px
+      &_one
+        margin-bottom: 5px
+    &__hotelname
+      margin-bottom: 15px
+    &__subtitle
+      width: 86%
+      margin-bottom: 30px
+    &__newprice
+      width: 96%
+      justify-content: space-between
+    &__num
+      margin: 0
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -264,10 +311,56 @@
   .card
     width: 48%
     height: 225px
+  .packages
+    &__title
+      font-size: 24px
+      line-height: 30px
+    &__info
+      padding-top: 20px
+    &__text
+      font-size: 11px
+    &__num
+      margin-right: 50px
+      font-size: 17px
+    &__hotelname
+      margin-bottom: 10px
+    &__subtitle
+      margin-bottom: 10px
+    &__room
+      &_one
+        margin: 0
 @media (max-width: 480px)
   .card
     width: 100%
     height: 255px
+  .packages
+    &__title
+      font-size: 19px
+      line-height: 24px
+    &__card
+      display: block
+    &__image
+      width: 100%
+      height: 50%
+      &_one
+        height: 35%
+        width: 100%
+    &__info
+      padding-top: 10px
+      &_one
+        display: block
+      &_title
+        margin-bottom: 20px
+    &__room
+      margin-bottom: 0
+    &__newprice
+      width: 96%
+      justify-content: space-between
+    &__num
+      margin: 0
+    &__subtitle, &__rating
+      display: none
+
 @media (max-width: 355px)
   .hotel
     &-slider
