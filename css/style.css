@@ -1544,6 +1544,7 @@ template {
   line-height: 15px;
   color: #BDBDBD;
   height: 123px;
+  resize: none;
 }
 
 .footer__button {
