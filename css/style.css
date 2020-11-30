@@ -1764,8 +1764,6 @@ template {
     margin-bottom: 20px;
   }
   .packages__subtitle_text {
-    height: 100px;
-    width: 10px;
     font-size: 10px;
   }
   .packages__hotelname {
