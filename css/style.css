@@ -1961,12 +1961,8 @@ template {
     width: 86%;
   }
   .footer__input {
-    -ms-flex-preferred-size: 90%;
-        flex-basis: 90%;
-  }
-  .footer__message {
-    -ms-flex-preferred-size: 90%;
-        flex-basis: 90%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -2089,8 +2085,8 @@ template {
     margin: 0;
   }
   .footer-wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
   }
   .footer__logo {
     -ms-grid-row: 1;
