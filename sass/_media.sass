@@ -166,6 +166,11 @@
         grid-row: 4
     &__input
       flex-basis: 49%
+    &__form
+      margin-bottom: 56px
+    &__payment
+      &_links
+        margin: 0
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -388,9 +393,6 @@
       &-form
         grid-row: 7
         grid-column: 1
-    &__payment
-      grid-row: 8
-      grid-column: 1
 @media (max-width: 480px)
   .card
     width: 100%
@@ -422,7 +424,23 @@
       margin: 0
     &__subtitle, &__rating
       display: none
-
+  .footer
+    &__message
+      margin-bottom: 15px
+    &__form
+      margin-bottom: 30px
+    &__payment
+      width: 290px
+      flex-wrap: wrap
+      &_links
+        margin-bottom: 10px
+    &__button
+      &--fields
+        flex-wrap: wrap
+    &__info
+      width: 100%
+      order: -1
+      margin-bottom: 15px
 @media (max-width: 355px)
   .hotel
     &-slider

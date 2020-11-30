@@ -1439,6 +1439,7 @@ template {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 95px;
 }
 
 .footer__ul {
@@ -1525,6 +1526,19 @@ template {
   border-radius: 4px;
 }
 
+.footer__button--fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
 .footer__info {
   font-weight: bold;
   font-size: 12px;
@@ -1539,23 +1553,24 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1 / 6;
 }
 
 .footer__payment_links {
-  text-decoration: none;
-  margin-right: auto;
+  margin-right: 277px;
+  margin-left: auto;
 }
 
 .footer__payment--link {
+  margin-right: 10px;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #ffffff;
   text-decoration: none;
-  margin-right: 10px;
+  color: #ffffff;
+}
+
+.footer__payment--link:last-child {
+  margin-right: 0;
 }
 
 @media (max-width: 1200px) {
@@ -1797,6 +1812,12 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
+  }
+  .footer__form {
+    margin-bottom: 56px;
+  }
+  .footer__payment_links {
+    margin: 0;
   }
 }
 
@@ -2130,12 +2151,6 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer__payment {
-    -ms-grid-row: 8;
-    grid-row: 8;
-    -ms-grid-column: 1;
-    grid-column: 1;
-  }
 }
 
 @media (max-width: 480px) {
@@ -2181,6 +2196,31 @@ template {
   }
   .packages__subtitle, .packages__rating {
     display: none;
+  }
+  .footer__message {
+    margin-bottom: 15px;
+  }
+  .footer__form {
+    margin-bottom: 30px;
+  }
+  .footer__payment {
+    width: 290px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__payment_links {
+    margin-bottom: 10px;
+  }
+  .footer__button--fields {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__info {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 15px;
   }
 }
 
