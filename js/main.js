@@ -31,3 +31,9 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     prevEl: '.reviews-slider__button--prev',
   },
 })    
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function () {
+  console.log('Клик по кнопке')
+  document.querySelector(".navbar__nav").classList.toggle('navbar__nav_visible')
+});
