@@ -185,6 +185,8 @@
   body
     padding-top: 78px
   .navbar
+    &__search
+      margin-bottom: 12px
     &__mobile
       &_fixed
         position: fixed
@@ -214,10 +216,13 @@
     &-menu
       flex-direction: column
       &__item
-        margin-bottom: 20px
+        margin-bottom: 27px
         &_mobile
           &_visible
             display: block
+  .search
+    &__input
+      width: 245px
   .hotel
     padding-top: 0
   .menu
@@ -237,11 +242,13 @@
         height: 1px
         background-color: $text-color
   .user
+    &__avatar
+      margin-bottom: 10px
     &__name
       &_light
         color: $light
         margin-left: 0
-        margin-top: 10px
+
   .stars
     flex-basis: auto
     margin-bottom: 16px
