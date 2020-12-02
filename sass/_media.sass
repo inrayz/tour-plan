@@ -19,7 +19,6 @@
     &__image
       height: 250px
     &__num
-      margin-right: 45px
     &__subtitle
       width: 250px
     &__hotelname
@@ -93,17 +92,15 @@
         width: 200px
   .packages
     &-wrapper
-      grid-template-columns: 210px 210px 210px
-      grid-template-rows: 350px 350px
+      grid-template-columns: 1fr 1fr 1fr
+      grid-template-rows: 50% 50%
     &__title
       font-size: 30px
       line-height: 38px
     &__card
-      height: 350px
     &__image
       height: 145px
     &__num
-      margin-right: 30px
       font-size: 20px
     &__subtitle
       width: 190px
@@ -122,6 +119,8 @@
       &_all
         padding-top: 10px
         padding-left: 20px
+      &_one
+        min-height: 350px
     &__text
       font-size: 10px
       line-height: 12px
@@ -326,23 +325,22 @@
     height: 250px
   .packages
     &-wrapper
-      grid-template-columns: 275px 275px
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr 1fr 1fr
     &__oldprice
       width: 100px
       margin: 0
-    &__num
-      margin-right: 90px
     &__subtitle
       width: 86%
   .footer
     &__input
       flex-basis: 100%
-@media (max-width: 640px)
+// @media (max-width: 640px)
   .packages
     &-wrapper
       grid-template-columns: 1fr
     &__card
-      display: flex
+      display: block
       &_item
         grid-column: 1
     &__image
@@ -403,26 +401,25 @@
   .card
     width: 48%
     height: 225px
-  .packages
-    &__title
-      font-size: 24px
-      line-height: 30px
-    &__offer
-      padding: 9px 12px
-    &__info
-      padding-top: 10px
-      &_title
-        margin-bottom: 4px
-    &__text
-      font-size: 11px
-    &__num
-      margin-right: 50px
-      font-size: 17px
-    &__subtitle
-      margin-bottom: 20px
-    &__room
-      &_one
-        margin: 0
+  // .packages
+  //   &__title
+  //     font-size: 24px
+  //     line-height: 30px
+  //   &__offer
+  //     padding: 9px 12px
+  //   &__info
+  //     padding-top: 10px
+  //     &_title
+  //       margin-bottom: 4px
+  //   &__text
+  //     font-size: 11px
+  //   &__num
+  //     font-size: 17px
+  //   &__subtitle
+  //     margin-bottom: 20px
+  //   &__room
+  //     &_one
+  //       margin: 0
   .footer
     padding-top: 69px
     padding-bottom: 21px
@@ -469,32 +466,43 @@
     width: 100%
     height: 255px
   .packages
-    &__title
-      font-size: 19px
-      line-height: 24px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: auto
     &__card
       display: block
+      &_item
+        grid-column: 1
     &__image
       width: 100%
-      height: 50%
+      height: 190px
       &_one
-        height: 35%
+        position: relative
         width: 100%
+        height: 190px
     &__info
       padding-top: 10px
       &_one
-        display: block
+        display: flex
+        flex-direction: column
       &_title
-        margin-bottom: 10px
+        margin-bottom: 24px
+    &__text
+      width: 100%
+      font-size: 12px
+      &_one
     &__room
-      margin-bottom: 0
-    &__newprice
-      width: 96%
-      justify-content: space-between
-    &__num
-      margin: 0
-    &__subtitle, &__rating
-      display: none
+      margin-bottom: 5px
+      &_one
+    &__rating
+      &_none
+        display: none
+    &__subtitle
+      width: 86%
+      margin-bottom: 30px
+      &_text
+        &_none
+          display: none
   .footer
     &__message
       margin-bottom: 15px
