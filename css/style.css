@@ -1002,7 +1002,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 54%;
+  top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1018,12 +1018,12 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: -10px;
+  left: 17px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: -10px;
+  right: 17px;
 }
 
 .reviews-slider__profile {
@@ -1214,10 +1214,6 @@ template {
 
 .packages__rating {
   margin-bottom: 5px;
-}
-
-.packages__rating_none {
-  display: none;
 }
 
 .packages__title {
@@ -1746,6 +1742,15 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .reviews-slider__button {
+    top: 49%;
+  }
+  .reviews-slider__button--next {
+    right: 0px;
+  }
+  .reviews-slider__button--prev {
+    left: 0px;
+  }
   .activities {
     padding-bottom: 50px;
   }
@@ -1890,6 +1895,7 @@ template {
   }
   .footer__form {
     margin-bottom: 56px;
+    width: 539px;
   }
   .footer__payment_links {
     margin: 0;
@@ -2120,6 +2126,9 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .footer__form {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2287,6 +2296,9 @@ template {
   }
   .packages__subtitle_text_none {
     display: none;
+  }
+  .footer__container {
+    margin: 0;
   }
   .footer__message {
     margin-bottom: 15px;
