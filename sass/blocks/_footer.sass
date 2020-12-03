@@ -83,7 +83,9 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
-    color: $footer-text-color
+    color: #333333
+    &::placeholder
+      color: $search-color
   &__message
     background-color: #fff
     border-radius: 4px
@@ -94,9 +96,11 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
-    color: $footer-text-color
+    color: #333333
     height: 123px
     resize: none
+    &::placeholder
+      color: $search-color
   &__button
     min-width: 160px
     min-height: 50px
@@ -108,6 +112,7 @@
     font-weight: bold
     font-size: 12px
     line-height: 15px
+    cursor: pointer
     &_fields
       display: flex
       justify-content: space-between
