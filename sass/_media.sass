@@ -184,6 +184,9 @@
     &__payment
       &_links
         margin: 0
+  .modal
+    &__dialog
+      padding: 33px 50px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -345,6 +348,17 @@
       flex-basis: 100%
     &__form
       width: 100%
+  .modal
+    &__dialog
+      padding: 20px 30px
+    &__info
+      width: 100%
+      order: -1
+      margin-bottom: 10px
+    &__button
+      &_fields
+        flex-wrap: wrap
+        width: 100%
 // @media (max-width: 640px)
   .packages
     &-wrapper
@@ -532,6 +546,10 @@
       width: 100%
       order: -1
       margin-bottom: 15px
+  .modal
+    &__dialog
+      padding: 20px 15px
+      width: 280px
 @media (max-width: 355px)
   .hotel
     &-slider
