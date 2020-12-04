@@ -58,3 +58,10 @@ function closeModal(event) {
   modalDialog.removeClass('modal__dialog_visible');
 }
 });
+
+$(document).keyup(function(esc) {
+  if (esc.which == 27) {
+    $(".modal__overlay").removeClass("modal__overlay_visible")
+    $(".modal__dialog").removeClass("modal__dialog_visible")
+  }
+});
