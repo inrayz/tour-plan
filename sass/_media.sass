@@ -76,9 +76,9 @@
         max-width: 580px
       &__button
         top: 49%
-        &--next
+        &_next
           right: 0px
-        &--prev
+        &_prev
           left: 0px
   .activities
     padding-bottom: 50px
@@ -323,11 +323,11 @@
           display: none
       &__button
         top: 31px
-        &--prev
+        &_prev
           left: 50%
           margin-left: -95px
           transform: translate(-50%, 0)
-        &--next
+        &_next
           right: 50%
           margin-right: -95px
           transform: translate(50%, 0)
@@ -395,6 +395,9 @@
     &__num
       margin: 0
 @media (max-width: 640px)
+  .modal
+    &__dialog
+      width: 390px
   .footer
     padding-top: 69px
     padding-bottom: 21px
@@ -437,6 +440,9 @@
         grid-row: 7
         grid-column: 1
 @media (max-width: 576px)
+  .modal
+    &__dialog
+      width: 375px
   .logo
     width: 99px
   .hotel
