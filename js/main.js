@@ -31,7 +31,7 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     nextEl: '.reviews-slider__button--next',
     prevEl: '.reviews-slider__button--prev',
   },
-})    
+})
 
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener('click', function () {
@@ -84,4 +84,17 @@ function closeModal(event) {
   modalOverlay.removeClass('modal__overlay_visible');
   modalDialog.removeClass('modal__dialog_visible');
 }
+
+// $(document).on('keydown', function(e) {
+//   if (e.keyCode == 27)
+//     window.close();
+// });
+
+$(document).keydown(function(e) {
+    // ESCAPE key pressed
+    if (e.keyCode == 27) {
+        window.close();
+    }
+});
+
 });
