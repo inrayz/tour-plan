@@ -6,19 +6,24 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
 $email = $_POST['email'];
+$text = $_POST['text'];
+$message = $_FILES['message'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
+$title = "Письмо Best Tour Plan";
 $body = "
-<h2>Новое обращение</h2>
+<h2>Новое письмо</h2>
 <b>Имя:</b> $name<br>
-<b>Почта:</b> $email<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
+<b>Почта:</b> $email<br><br>
+<b>Сообщение:</b><br>$message";
+if ($email) {
+  $title = "Подписка на новости Best Tour Plan";
+  $body = "
+    <h2>Подписка на новости Best Tour Plan</h2>
+    <b>mail:</b> $email<br>
+  ";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -30,16 +35,15 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'inrayzik@gmail.com'; // Логин на почте
-    $mail->Password   = 'ovv.2424'; // Пароль на почте
+    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'inrayz@bk.ru'; // Логин на почте
+    $mail->Password   = 'ovv.2442'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('inrayzik@gmail.com', 'Вячеслав Обрывалин'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('inrayz@bk.ru', 'Вячеслав Обрывалин'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('inrayz@yandex.ru');  
-    $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
 
 // Отправка сообщения
 $mail->isHTML(true);
@@ -57,3 +61,5 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
+if ($email) 
+    header('Location: subscription.html');
