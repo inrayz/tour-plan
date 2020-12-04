@@ -6,16 +6,16 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
 $email = $_POST['email'];
-$text = $_POST['text'];
-$message = $_FILES['message'];
 
 // Формирование самого письма
 $title = "Письмо Best Tour Plan";
 $body = "
 <h2>Новое письмо</h2>
 <b>Имя:</b> $name<br>
-<b>Почта:</b> $email<br><br>
+<b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message";
 if ($email) {
   $title = "Подписка на новости Best Tour Plan";
