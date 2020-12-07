@@ -2277,6 +2277,9 @@ template {
     width: 100%;
   }
   .modal__dialog {
+    overflow: auto;
+    position: fixed;
+    max-height: 100%;
     padding: 20px 30px;
   }
   .modal__info {
