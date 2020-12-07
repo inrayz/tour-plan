@@ -233,7 +233,7 @@
                   <span class="packages__oldprice">$ 10,500</span>
                   <div class="packages__newprice">
                     <span class="packages__num">$ 8,500</span>
-                    <button class="button packages__button">Book Now</button>
+                    <button data-toggle="modal" class="button packages__button">Book Now</button>
                   </div>
                 </div>
                 <!-- /.packages__price -->
@@ -267,7 +267,7 @@
                 <span class="packages__oldprice">$ 8,500</span>
                 <div class="packages__newprice">
                   <span class="packages__num">$ 3,000</span>
-                  <button class="button packages__button">Book Now</button>
+                  <button data-toggle="modal" class="button packages__button">Book Now</button>
                 </div>
               </div>
               <!-- /.packages__price -->
@@ -301,7 +301,7 @@
                 <span class="packages__oldprice">$ 10,500</span>
                 <div class="packages__newprice">
                   <span class="packages__num">$ 9,500</span>
-                  <button class="button packages__button">Book Now</button>
+                  <button data-toggle="modal" class="button packages__button">Book Now</button>
                 </div>
               </div>
               <!-- /.packages__price -->
@@ -335,7 +335,7 @@
                 <span class="packages__oldprice">$ 4,500</span>
                 <div class="packages__newprice">
                   <span class="packages__num">$ 2,500</span>
-                  <button class="button packages__button">Book Now</button>
+                  <button data-toggle="modal" class="button packages__button">Book Now</button>
                 </div>
               </div>
               <!-- /.packages__price -->
@@ -367,7 +367,7 @@
                 <span class="packages__oldprice">$ 6,500</span>
                 <div class="packages__newprice">
                   <span class="packages__num">$ 3,500</span>
-                  <button class="button packages__button">Book Now</button>
+                  <button data-toggle="modal" class="button packages__button">Book Now</button>
                 </div>
               </div>
               <!-- /.packages__price -->
@@ -388,7 +388,7 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-          <input type="text" class="subscribe__input" placeholder="Your email address" name="email">
+          <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
           <button class="subscribe__button">
             Send
           </button>
@@ -493,28 +493,28 @@
             <img src="img/activity-1.jpeg" alt="" class="card__image">
             <h3 class="card__title card__title--one">The curious corner
               of chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
             <img src="img/activity-2.jpeg" alt="" class="card__image">
             <h3 class="card__title card__title--two">Gymkhana club golf
               course</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
             <img src="img/activity-3.jpeg" alt="" class="card__image">
             <h3 class="card__title card__title--three">Tamarind falls hiking
               trip - full day</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
             <img src="img/activity-4.jpeg" alt="" class="card__image">
             <h3 class="card__title card__title--four">The blue marine discovery
               quest</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
         </div>
@@ -602,10 +602,30 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="post" class="footer__form">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-              <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-              <textarea class="message footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
+            <form action="send.php" method="post" class="footer__form form">
+              <div class="footer__input-group">
+                <input 
+                type="text" 
+                class="input footer__input" 
+                placeholder="Your Full Name*" 
+                name="name" 
+                required>
+              </div>
+              <div class="footer__input-group">
+                <input 
+                  type="tel" 
+                  class="input footer__input input__phone" 
+                  placeholder="Phone Number*" 
+                  name="phone" 
+                  required>
+              </div>
+              <textarea 
+                class="message footer__message" 
+                cols="30" 
+                rows="10" 
+                placeholder="Message" 
+                name="message">
+              </textarea>
               <div class="footer__button_fields">
                 <button class="button footer__button" type="submit">Send</button>
                 <span class="footer__info">* Required Fields</span>
@@ -635,10 +655,10 @@
           <img src="img/close.svg" alt="close">
         </a>
         <h3 class="modal__title modal__title--mb-3">Booking</h3>
-        <form action="send.php" method="post" id="form" class="modal__form">
-          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-          <input type="text" class="input modal__input" placeholder="Email*" name="email">
+        <form action="send.php" method="post" id="form" class="modal__form form">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+          <input type="tel" class="input modal__input input__phone" placeholder="Phone Number*" name="phone" required>
+          <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
           <textarea class="message modal__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
           <div class="modal__button_fields">
             <button class="button modal__button" type="submit">Send</button>
@@ -652,8 +672,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

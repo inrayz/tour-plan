@@ -30,7 +30,8 @@
     &-wrapper
       grid-template-columns: 1fr 1fr 2fr
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -177,7 +178,8 @@
         grid-column: span 4
         grid-row: 4
     &__input
-      flex-basis: 47%
+      &-group
+        flex-basis: 47%
     &__form
       margin-bottom: 56px
       width: 539px
@@ -258,7 +260,6 @@
       &_light
         color: $light
         margin-left: 0
-
   .stars
     flex-basis: auto
     margin-bottom: 16px
@@ -345,7 +346,8 @@
       width: 86%
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__form
       width: 100%
   .modal
@@ -359,7 +361,6 @@
       &_fields
         flex-wrap: wrap
         width: 100%
-
   .packages
     &-wrapper
       grid-template-columns: 1fr
