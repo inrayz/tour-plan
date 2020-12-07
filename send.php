@@ -22,7 +22,7 @@ if ($email) {
   $body = "
     <h2>Подписка на новости Best Tour Plan</h2>
     <b>mail:</b> $email<br>
-  ";
+  "; 
 }
 
 // Настройки PHPMailer
@@ -61,5 +61,3 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
-if ($email) 
-    header('Location: subscription.html');

@@ -28,8 +28,8 @@ var reviewsSlider = new Swiper('.reviews-slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.reviews-slider__button--next',
-    prevEl: '.reviews-slider__button--prev',
+    nextEl: '.reviews-slider__button_next',
+    prevEl: '.reviews-slider__button_prev',
   },
 })
 
@@ -71,20 +71,21 @@ function closeModal(event) {
       errorClass: "invalid",
       messages: {
         name: {
-          required:"Укажите имя",
-          minlenght: "Имя должно быть не короче 2 букв"
+          required:"Specified name",
+          minlenght: "The name must be at least 2 letters long"
         },
         email: {
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com"
         },
         phone: {
-          required: "Телефон обязателен"
+          required: "Phone number required",
+          minlenght: "The phone number must be at least 16 characters long"
         },
       },
     });
   })
   $(".form").ready(function(){
-    $(".input__phone").mask("+7(999) 999-9999");
+    $(".input__phone").mask("+7(999)-999-9999");
   });
 });

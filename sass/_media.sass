@@ -32,6 +32,10 @@
     &__input
       &-group
         flex-basis: 100%
+    &__form
+      &_input
+        display: block
+        margin-bottom: 0
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -183,6 +187,8 @@
     &__form
       margin-bottom: 56px
       width: 539px
+      &_input
+        display: flex
     &__payment
       &_links
         margin: 0
@@ -350,7 +356,11 @@
         flex-basis: 100%
     &__form
       width: 100%
+      &_input
+        display: block
   .modal
+    &__message
+      margin-bottom: 15px
     &__dialog
       overflow: auto
       position: fixed
@@ -364,40 +374,7 @@
       &_fields
         flex-wrap: wrap
         width: 100%
-  .packages
-    &-wrapper
-      grid-template-columns: 1fr
-    &__card
-      display: block
-      &_item
-        grid-column: 1
-    &__image
-      width: 50%
-      height: 100%
-    &__info
-      padding-top: 10px
-      &_title
-        margin-bottom: 15px
-    &__text
-      width: 100%
-      font-size: 12px
-      &_one
-    &__room
-      margin-bottom: 5px
-      &_one
-    &__rating
-      &_none
-        display: block
-    &__subtitle
-      width: 86%
-      margin-bottom: 30px
-      &_textnone
-        display: block
-    &__newprice
-      width: 96%
-      justify-content: space-between
-    &__num
-      margin: 0
+
 @media (max-width: 640px)
   .modal
     &__dialog
