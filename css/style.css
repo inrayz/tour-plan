@@ -2486,6 +2486,9 @@ template {
   .packages__info {
     padding-top: 10px;
   }
+  .packages__info_all {
+    width: 100%;
+  }
   .packages__info_one {
     display: -webkit-box;
     display: -ms-flexbox;
