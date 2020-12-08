@@ -475,6 +475,12 @@ template {
   font-size: 14px;
   line-height: 18px;
   font-weight: bold;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.navbar-menu__link:hover {
+  color: #aaaaaa;
 }
 
 .navbar-menu__item_mobile_visible {
@@ -483,6 +489,16 @@ template {
 
 .logo {
   width: 177px;
+}
+
+.logo__image {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.logo__image:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .search {
@@ -532,6 +548,14 @@ template {
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.search__button:hover {
+  background-color: #be1837;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .user {
@@ -550,6 +574,13 @@ template {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.user__avatar:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .user__name {
@@ -557,6 +588,13 @@ template {
   line-height: 18px;
   color: #333333;
   margin-left: 18px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.user__name:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .breadcrumb-list {
@@ -889,6 +927,14 @@ template {
   border-radius: 4px;
   background-color: #EC1F46;
   cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.booking__button:hover {
+  background-color: #be1837;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .map {
@@ -1000,6 +1046,14 @@ template {
   font-size: 12px;
   line-height: 15px;
   border-radius: 0 4px 4px 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.subscribe__button:hover {
+  background-color: #be1837;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .reviews {
@@ -1239,6 +1293,14 @@ template {
   background-color: #EC1F46;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.card__button:hover {
+  background-color: #be1837;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .container__image {
@@ -1461,6 +1523,14 @@ template {
   border-radius: 4px;
   cursor: pointer;
   min-width: 75px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.packages__button:hover {
+  background-color: #be1837;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .footer {
@@ -1667,6 +1737,17 @@ template {
   color: #BDBDBD;
 }
 
+.footer__button {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer__button:hover {
+  background-color: #be1837;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .footer__button_fields {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1784,6 +1865,14 @@ template {
 
 .modal__button {
   margin-top: 15px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.modal__button:hover {
+  background-color: #be1837;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .modal__button_fields {
