@@ -362,9 +362,9 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="https://ru-ru.facebook.com/" class="footer__link"><img src="img/facebook.svg" alt=""></a>
-              <a href="https://www.youtube.com/" class="footer__link"><img src="img/youtube.svg" alt=""></a>
-              <a href="https://www.instagram.com/" class="footer__link"><img src="img/instagram.svg" alt=""></a>
+              <a href="https://ru-ru.facebook.com/" class="footer__link" target="_blank"><img src="img/facebook.svg" alt=""></a>
+              <a href="https://www.youtube.com/" class="footer__link" target="_blank"><img src="img/youtube.svg" alt=""></a>
+              <a href="https://www.instagram.com/" class="footer__link" target="_blank"><img src="img/instagram.svg" alt=""></a>
             </div>
             <!-- /.footer__social-links -->
           </div>
@@ -442,24 +442,27 @@
       </div>
     </footer>
     <div class="modal">
-      <div class="modal__overlay"></div>
-      <!-- /.modal__overlay -->
-      <div class="modal__dialog">
-        <a href="#" class="modal__close">
-          <img src="img/close.svg" alt="close">
-        </a>
-        <h3 class="modal__title modal__title--mb-3">Booking</h3>
-        <form action="send.php" method="post" id="form" class="modal__form form">
-          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-          <input type="tel" class="input modal__input input__phone" placeholder="Phone Number*" name="phone" required minlength="16">
-          <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
-          <textarea class="message modal__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
-          <div class="modal__button_fields">
-            <button class="button modal__button" name="booknow" type="submit">Send</button>
-            <span class="modal__info">* Required Fields</span>
-          </div>
-        </form>
+      <div class="modal__overlay">
+        <div class="modal__dialog">
+          <a href="#" class="modal__close">
+            <img src="img/close.svg" alt="close">
+          </a>
+          <h3 class="modal__title modal__title--mb-3">Booking</h3>
+          <form action="send.php" method="post" id="form" class="modal__form form">
+            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+            <input type="tel" class="input modal__input input__phone" placeholder="Phone Number*" name="phone" required
+              minlength="16">
+            <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+            <textarea class="message modal__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
+            <div class="modal__button_fields">
+              <button class="button modal__button" name="booknow" type="submit">Send</button>
+              <span class="modal__info">* Required Fields</span>
+            </div>
+          </form>
+        </div>
       </div>
+      <!-- /.modal__overlay -->
+      
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->

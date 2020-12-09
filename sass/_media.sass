@@ -46,10 +46,12 @@
       padding-top: 30px
       padding-bottom: 30px
     &__search
-      margin-left: auto
+      margin-left: 50px
     &-menu
+      padding-left: 12px
       padding-top: 22px
       padding-bottom: 22px
+      padding-right: 12px
       &__link
         font-size: 12px
         line-height: 15px
@@ -204,6 +206,7 @@
     padding-top: 78px
   .navbar
     &__search
+      margin-left: auto
       margin-bottom: 12px
     &__mobile
       &_fixed
@@ -582,3 +585,9 @@
       &_link
         margin-right: 7px
         font-size: 11px
+@media only screen and (min-device-width: 320px) and (max-device-width: 780px) and (orientation: landscape)
+  .modal
+    overflow-y: initial !important
+    &__dialog
+      height: 95vh
+      overflow-y: auto
