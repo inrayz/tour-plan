@@ -16,6 +16,7 @@ $body = "
 <h2>Новое письмо</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
+<b>mail:</b> $email<br>
 <b>Сообщение:</b><br>$message";
 if ($email) {
   $title = "Подписка на новости Best Tour Plan";

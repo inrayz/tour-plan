@@ -80,13 +80,13 @@ function closeModal(event) {
         },
         phone: {
           required: "Phone number required",
-          minlenght: "The phone number must be at least 16 characters long"
+          minlenght: "The phone number must be at least 10 digits long"
         },
       },
     });
   })
   $(".form").ready(function(){
-    $(".input__phone").mask("+7(999)-999-9999");
+    $(".input__phone").mask("+7(000) 000-00-00");
   });
 });
 AOS.init();
