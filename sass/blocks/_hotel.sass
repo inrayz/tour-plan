@@ -180,74 +180,9 @@
     transition: .2s
     &:hover
       background-color: #be1837
-// .map
-//   width: 347px
-//   height: 213px
-//   background-color: #000
-//   border-radius: 10px
-//   overflow: hidden
-/* &#34;Блок-обертка&#34;, где мы задаем фоновое изображение скриншотом как на карте */
-.ymap-container
-  position: relative
-  overflow: hidden
-  cursor: pointer
-  background: #ffffff no-repeat
-  background-position: center center
-  background-size: cover
-
-/* Блок, в котором появится Яндекс.Карта */
-#map-yandex
-  position: relative
-  z-index: 7
-  width: 100%
+.map
+  width: 347px
   height: 213px
-  cursor: pointer
-  background-color: transparent
-/* Индикатор загрузки, который показывается до загрузки карты */
-.loader
-  position: absolute
-  z-index: 15
-  top: -100%
-  left: 0
-  box-sizing: border-box
-  width: 100%
-  height: 100%
+  background-color: #000
+  border-radius: 10px
   overflow: hidden
-  color: #000000
-  transition: opacity .7s ease
-  opacity: 0
-
-  &:after,
-
-  &:before
-    box-sizing: border-box
-
-  &.is-active
-    top: 0
-    opacity: 1
-
-  &-default:after
-    position: absolute
-    top: calc(50% - 24px)
-    left: calc(50% - 24px)
-    width: 48px
-    height: 48px
-    content: ''
-    animation: rotation 1s linear infinite
-    border: solid 8px #ffffff
-    border-left-color: transparent
-    border-radius: 50%
-
-@keyframes rotation
-  from
-    transform: rotate(0)
-
-  to
-    transform: rotate(359deg)
-
-@keyframes blink
-  from
-    opacity: .5
-
-  to
-    opacity: 1
