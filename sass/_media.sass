@@ -367,9 +367,6 @@
     &__message
       margin-bottom: 15px
     &__dialog
-      overflow: auto
-      position: fixed
-      max-height: 100%
       padding: 20px 30px
     &__info
       width: 100%
@@ -586,9 +583,3 @@
       &_link
         margin-right: 7px
         font-size: 11px
-@media only screen and (min-device-width: 320px) and (max-device-width: 780px) and (orientation: landscape)
-  .modal
-    overflow-y: initial !important
-    &__dialog
-      height: 95vh
-      overflow-y: auto
