@@ -58,29 +58,29 @@ function closeModal(event) {
       $(".modal__overlay").removeClass("modal__overlay_visible")
       $(".modal__dialog").removeClass("modal__dialog_visible")
   }
-
+});
   //Обработка форм 
-  $(".form").each(function() {
-    $(this).validate({
-      errorClass: "invalid",
-      messages: {
-        name: {
-          required:"Specified name",
-          minlenght: "The name must be at least 2 letters long"
-        },
-        email: {
-          required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
-        },
-        phone: {
-          required: "Phone number required",
-          minlenght: "The phone number must be at least 10 digits long"
-        },
+$(".form").each(function() {
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required:"Specified name",
+        minlenght: "The name must be at least 2 letters long"
       },
-    });
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+      phone: {
+        required: "Phone number required",
+        minlenght: "The phone number must be at least 10 digits long"
+      },
+    },
+  });
   })
   $(".form").ready(function(){
     $(".input__phone").mask("+7(000) 000-00-00");
   });
-});
+
 AOS.init();
