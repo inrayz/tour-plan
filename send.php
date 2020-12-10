@@ -71,5 +71,5 @@ else {$result = "error";}
 // Отображение результата
 header('Location: thankyou.html');
 if ($mail) {
-header('Location: subscribe.html')
+header('Location: subscribe.html');
 }
