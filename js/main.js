@@ -29,7 +29,6 @@ var reviewsSlider = new Swiper('.reviews-slider', {
 
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener('click', function () {
-  console.log('Клик по кнопке')
   document.querySelector(".navbar__nav").classList.toggle('navbar__nav_visible')
 });
 
@@ -69,6 +68,10 @@ $(".form").each(function() {
         minlenght: "The name must be at least 2 letters long"
       },
       email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+      mail: {
         required: "We need your email address to contact you",
         email: "Your email address must be in the format of name@domain.com"
       },
