@@ -12,14 +12,16 @@ $email = $_POST['email'];
 $mail = $_POST['mail'];
 
 // Формирование самого письма
-$title = "Письмо Best Tour Plan";
-$body = "
-<h2>Новое письмо</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message";
-if ($email) {
-  $title = "Подписка на новости Best Tour Plan";
+if ($message) {
+  $title = "Письмо Best Tour Plan";
+  $body = "
+    <h2>Новое письмо</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br><br>
+    <b>Сообщение:</b><br>$message";
+}
+elseif ($email) {
+  $title = "Письмо Best Tour Plan";
   $body = "
     <h2>Новое письмо</h2>
     <b>Имя:</b> $name<br>
@@ -27,7 +29,7 @@ if ($email) {
     <b>mail:</b> $email<br>
     <b>Сообщение:</b><br>$message"; 
 }
-if ($mail) {
+elseif ($mail) {
   $title = "Подписка на новости Best Tour Plan";
   $body = "
     <h2>Новое письмо</h2>
@@ -69,7 +71,8 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
-if ($mail) {
+if ($message) header('Location: thankyou.html'); 
+elseif ($email) header('Location: thankyou.html');
+elseif ($mail) {
 header('Location: subscribe.html');
 }
