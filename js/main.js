@@ -29,6 +29,7 @@ var reviewsSlider = new Swiper('.reviews-slider', {
 
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener('click', function () {
+  console.log('Клик по кнопке')
   document.querySelector(".navbar__nav").classList.toggle('navbar__nav_visible')
 });
 
@@ -50,7 +51,7 @@ function closeModal(event) {
   modalOverlay.removeClass('modal__overlay_visible');
   modalDialog.removeClass('modal__dialog_visible');
 }
-});
+
 
   $(document).keyup(function(esc) {
     if (esc.which == 27) {
@@ -59,29 +60,30 @@ function closeModal(event) {
   }
 });
   //Обработка форм 
-$(".form").each(function() {
-  $(this).validate({
-    errorClass: "invalid",
-    messages: {
-      name: {
-        required:"Specified name",
-        minlenght: "The name must be at least 2 letters long"
+  $(".form").each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required:"Specified name",
+          minlenght: "The name must be at least 2 letters long"
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        mail: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "Phone number required",
+          minlenght: "The phone number must be at least 10 digits long"
+        },
       },
-      email: {
-        required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com"
-      },
-      mail: {
-        required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com"
-      },
-      phone: {
-        required: "Phone number required",
-        minlenght: "The phone number must be at least 10 digits long"
-      },
-    },
-  });
+    });
   })
+});  
   $(".form").ready(function(){
     $(".input__phone").mask("+7(000) 000-00-00");
   });
