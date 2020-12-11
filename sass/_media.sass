@@ -41,6 +41,10 @@
     &__button
       &:hover
         background-color: #be1837
+  .subscribe
+    &__link
+      &:hover
+        background-color: #be1837
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -205,8 +209,9 @@
     &__logo
       width: 104px
       height: 120px
-      grid-column: span 2
-      grid-row: 1 / 2
+      &_link
+        grid-column: span 2
+        grid-row: 1 / 2
     &__social
       &-network
         grid-row: 1 / 2
@@ -587,6 +592,10 @@
     &__dialog
       padding: 20px 15px
       width: 280px
+  .hotel
+    &-name
+      &__subscribe
+        font-size: 20px
 @media (max-width: 355px)
   .hotel
     &-slider
